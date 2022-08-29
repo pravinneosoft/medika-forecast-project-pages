@@ -1,0 +1,48 @@
+
+@charset 'utf-8';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//table css
+.table{
+    &__title tr{
+        font-size: 14px;
+        font-weight: 700;
+        color: #383874 !important;
+       
+        
+    }
+   
+    &__body{
+        font-size: 14px;
+        color: #383874 !important;
+        font-weight: 400;
+        // tr th{
+        //     padding-top: 20px;
+        //     padding-left: 24px;
+        // }
+        td{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        td p{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//bootstrap5.2 custom css
+.table-bordered > :not(caption) > *  {
+    border-width: 0.5px 0.5px;
+    border-color: #C4C6D1;
+}
+.table-striped-columns > :not(caption) > tr > :nth-child(even) {
+   
+    --bs-table-accent-bg: rgba(238, 240, 250, 0.34) ;
+    color: #383874
+   
+}
+.table-striped-columns > :not(caption) > tr > :not(:nth-child(2),:first-child) {
+    text-align: center;
+}

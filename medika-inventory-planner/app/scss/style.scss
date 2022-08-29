@@ -1,0 +1,80 @@
+@charset 'utf-8';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+p {
+    margin: 0;
+}
+
+//table css
+.table {
+    width: 1840px;
+    &__title tr {
+        font-size: 14px;
+        color: #383874 !important;
+    }
+
+    &__body {
+        font-size: 14px;
+        color: #383874 !important;
+        font-weight: 400 !important;
+
+        td {
+            vertical-align: middle;
+            padding-left: 21px;
+        }
+
+
+
+    }
+
+    &__heading {
+        padding: 7px 31px 7px 24px !important;
+        width: 259px;
+        vertical-align: middle;
+        &-row{
+            padding: 23px 26px 24px 22px !important;
+        }
+        &:nth-child(2){
+            width: 290px;
+        }
+        &-status{
+            font-weight: 500;
+        }
+    }
+
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        &-input {
+            width: 90px;
+            background: #fff;
+            border: 0.5px solid #8676FF;
+            border-radius: 5px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #383874;
+            padding-left: 7px;
+        }
+
+        p:not(:first-child) {
+            width: 32px;
+        }
+
+        &-current {
+            width: 90px !important;
+        }
+    }
+}
+
+//bootstrap5.2 custom css
+.table-bordered> :not(caption)>* {
+    border-width: 0.5px 0.5px;
+    border-color: #C4C6D1;
+}
+
+.table-striped-columns> :not(caption)>tr> :nth-child(even) {
+    --bs-table-accent-bg: rgba(238, 240, 250, 0.34);
+    color: #383874
+}
